@@ -38,6 +38,7 @@ npm run format
 ```
 npm run storybook
 ```
+http://localhost:6006/ 
 
 ## バックエンド
 
