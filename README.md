@@ -18,6 +18,12 @@ npm run dev
 ***ESLintとPrettierより高速***
 ***開発スピード重視***
 
+```
+npm run lint
+
+npm run format
+```
+
 ## バックエンド
 
 
