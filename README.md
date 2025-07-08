@@ -1,4 +1,4 @@
-## フロントエンド技術構成
+## 技術構成
 - TypeScript
 - React
 - Tailwind
@@ -6,7 +6,7 @@
 - Biome
 
 
-
+## フロントエンド
 ### サーバー起動
 ```
 npm run dev
