@@ -25,7 +25,7 @@ export const WelcomePage = () => {
                 </div>
                 <p className="text-center text-2xl mt-10">エンジニア同士で有益な記事を共有しよう</p>
             </main>
-            <footer  className="mt-10 bg-cyan-400 text-white w-full p-10 text-center">
+            <footer  className="mt-10 font-bold bg-cyan-400 text-white w-full p-7 text-center">
                 <p>© 2025 テックブログ共有アプリ</p>
             </footer>
         </div>
