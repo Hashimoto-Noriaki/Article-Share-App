@@ -1,7 +1,6 @@
 
 
 export const WelcomePage = () => {
-    console.log('WelcomePage rendered');
     return (
         <div>
             <header className="bg-cyan-400 p-5">
