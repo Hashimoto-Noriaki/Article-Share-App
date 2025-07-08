@@ -15,8 +15,8 @@ npm run dev
 
 ### 静的解析ツール
 #### Biome
-***ESLintとPrettierより高速***
-***開発スピード重視***
+ESLintとPrettierより高速
+開発スピード重視
 
 ```
 npm run lint
