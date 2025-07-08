@@ -4,7 +4,7 @@ npm run dev
 ```
 
 ### フロント設計
-- ```feature```
+- ```features```
 ***ページ専属ロジック***
 
 - ```shared```
