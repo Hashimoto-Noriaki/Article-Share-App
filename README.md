@@ -4,17 +4,17 @@ npm run dev
 ```
 
 ### フロント設計
-#### features
+#### ⚫︎features
 ***ページ専属ロジック***
 
-#### shared
+#### ⚫︎shared
 ***共通コンポーネント***
 
-#### pages
+#### ⚫︎pages
 ***ルーティング***
 
 ### 静的解析ツール
-#### Biome
+#### ⚫︎Biome
 ESLintとPrettierより高速
 開発スピード重視
 
