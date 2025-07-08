@@ -34,6 +34,11 @@ npm run lint
 npm run format
 ```
 
+### StoryBook
+```
+npm run storybook
+```
+
 ## バックエンド
 
 
