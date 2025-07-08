@@ -1,9 +1,14 @@
 ## 技術構成
 - TypeScript
 - React
+- Nest.js
+- ReactNative
 - Tailwind
 - CSS Modules
 - Biome
+- StoryBook
+- Docker(マルチステージビルド)
+- GitHubActions
 
 
 ## フロントエンド
