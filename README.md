@@ -37,6 +37,11 @@ cd frontend
 docker compose up -d
 ```
 
+- ***docker停止***
+```
+docker compose down
+```
+
 ### 静的解析ツールBiome
 ESLintとPrettierより高速
 開発スピード重視
@@ -67,10 +72,15 @@ cd frontend
 docker compose build
 ```
 
-- ***フロントエンド***
+- ***docker起動***
 ```
 cd frontend
 docker compose up -d
+```
+
+- ***docker停止***
+```
+docker compose down
 ```
 
 
