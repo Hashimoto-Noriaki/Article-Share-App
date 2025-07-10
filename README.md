@@ -24,6 +24,24 @@ npm run dev
 |shared|共通コンポーネント|
 |pages|ルーティング|
 
+### Docker
+- ***ビルド***
+```
+cd frontend
+docker compose build
+```
+
+- ***フロントエンド***
+```
+cd frontend
+docker compose up -d
+```
+
+- ***docker停止***
+```
+docker compose down
+```
+
 ### 静的解析ツールBiome
 ESLintとPrettierより高速
 開発スピード重視
@@ -44,11 +62,6 @@ http://localhost:6006/
 
 <img width="1433" alt="スクリーンショット 2025-07-09 0 39 41" src="https://github.com/user-attachments/assets/1665de5d-c9d4-47b9-a169-c5cb3316df0b" />
 
-## バックエンド
-- サーバー起動
-```
-npm run start:dev
-```
 
 ## スマホアプリ
 
