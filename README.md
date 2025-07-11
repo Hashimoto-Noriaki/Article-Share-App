@@ -12,6 +12,8 @@
 - Testing Library
 - Docker(マルチステージビルド)
 - GitHubActions
+- Prisma
+- GCP
 
 
 ## フロントエンド
