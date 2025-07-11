@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
+import { AuthButton } from '../../shared/atoms/auth/AuthButton';
 
 export const LoginPage = () => {
     return (
@@ -26,9 +27,9 @@ export const LoginPage = () => {
                             placeholder="********"
                         />
                     </div>
-                    <button className="w-full bg-emerald-600 hover:shadow-lg text-white rounded-lg font-bold py-3 mt-5 mrounded-full shadow hover:bg-emerald-500 transition">
+                    <AuthButton>
                         ログイン
-                    </button>
+                    </AuthButton>
                     <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
                         <Link to ='/register'>新規登録はこちら</Link>
                     </p>
