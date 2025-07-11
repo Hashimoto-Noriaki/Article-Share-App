@@ -4,7 +4,7 @@ import { FaLaptopCode } from 'react-icons/fa';
 export const WelcomePage = () => {
     return (
         <div className="flex flex-col min-h-screen">
-            <header className="bg-cyan-400 p-5">
+            <header className="bg-gradient-to-r from-cyan-300 to-cyan-600 p-5">
                 <div className="flex justify-between">
                     <div> 
                         <h1 className="text-yellow-400 font-bold text-3xl mb-3">テックブログ共有アプリ</h1>
@@ -32,7 +32,7 @@ export const WelcomePage = () => {
                 </div>
                 <p className="text-center text-2xl p-10">お気に入りの技術記事があれば投稿しよう🎵</p>
             </main>
-            <footer  className="mt-5 bg-cyan-400 text-white w-full p-7 text-center">
+            <footer  className="mt-5 bg-gradient-to-r from-cyan-300 to-cyan-600 text-white w-full p-7 text-center">
                 <p className="text-sm font-bold">© 2025 テックブログ共有アプリ</p>
             </footer>
         </div>
