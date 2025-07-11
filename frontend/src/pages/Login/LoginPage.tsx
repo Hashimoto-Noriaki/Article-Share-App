@@ -29,8 +29,8 @@ export const LoginPage = () => {
                     <button className="w-full bg-emerald-600 hover:shadow-lg text-white rounded-lg font-bold py-3 mt-5 mrounded-full shadow hover:bg-emerald-500 transition">
                         ログイン
                     </button>
-                    <p className="mt-3 text-center  *:text-2xl underline hover:text-cyan-800">
-                        <Link to = '/'>新規登録はこちら</Link>
+                    <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
+                        <Link to ='/register'>新規登録はこちら</Link>
                     </p>
                 </form>
             </div>
