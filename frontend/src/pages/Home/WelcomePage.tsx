@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
+import { Footer } from '../../shared/atoms/Footer';
 
 export const WelcomePage = () => {
     return (
@@ -32,9 +33,7 @@ export const WelcomePage = () => {
                 </div>
                 <p className="text-center text-2xl p-10">お気に入りの技術記事があれば投稿しよう🎵</p>
             </main>
-            <footer  className="mt-5 bg-gradient-to-r from-cyan-300 to-cyan-600 text-white w-full p-7 text-center">
-                <p className="text-sm font-bold">© 2025 テックブログ共有アプリ</p>
-            </footer>
+            <Footer />
         </div>
     )
 }
