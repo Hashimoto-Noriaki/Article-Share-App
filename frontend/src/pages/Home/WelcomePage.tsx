@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
 
 export const WelcomePage = () => {
@@ -13,7 +14,9 @@ export const WelcomePage = () => {
                         <ul className="flex gap-10 text-white font-bold p-5 text-lg">
                             <li className="hover:text-yellow-400">利用説明</li>
                             <li className="hover:text-yellow-400">新規ユーザー登録</li>
-                            <li className="hover:text-yellow-400">ログイン</li>
+                            <li className="hover:text-yellow-400">
+                                <Link to='/login'>ログイン</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>

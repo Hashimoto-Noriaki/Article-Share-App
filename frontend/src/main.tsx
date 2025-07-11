@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { WelcomePage } from './pages/Home/WelcomePage'
+import { RouterProvider } from 'react-router-dom'
+import WelcomePage  from './pages/Home/WelcomePage'
+import { router } from './router'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <WelcomePage/>
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
