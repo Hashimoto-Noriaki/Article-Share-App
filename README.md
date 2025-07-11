@@ -71,7 +71,8 @@ npm test
 
 ### トップ画像
 
-<img width="1433" alt="スクリーンショット 2025-07-09 0 39 41" src="https://github.com/user-attachments/assets/1665de5d-c9d4-47b9-a169-c5cb3316df0b" />
+<img width="1436" height="733" alt="スクリーンショット 2025-07-12 4 16 39" src="https://github.com/user-attachments/assets/7ff1a1ea-4075-4f56-bb40-ae0def28ea33" />
+
 
 ## バックエンド
 - サーバー起動
