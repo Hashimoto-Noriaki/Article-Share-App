@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
-import { Footer } from '../../shared/atoms/Footer';
+import { Footer } from '../../shared/atoms/Footer/Footer';
 
 export const WelcomePage = () => {
     return (
