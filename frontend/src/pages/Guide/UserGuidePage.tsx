@@ -29,7 +29,7 @@ export const UserGuidePage = () => {
             </div>
             <div className="mt-5">
                 <button 
-                    className="w-[300px] mt-8 border-2 border-solid border-blue-100 bg-blue-300 hover:bg-blue-600 font-bold px-10 py-5 rounded-full shadow transition hover:"
+                    className="w-[300px] mt-8 border-2 border-solid border-cyan-100 bg-cyan-300 hover:bg-cyan-400 font-bold px-10 py-5 rounded-full shadow transition hover:"
                 >
                     <Link to="/">戻る</Link>
                 </button>
