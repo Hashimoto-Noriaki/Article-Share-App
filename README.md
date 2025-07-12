@@ -73,6 +73,11 @@ npm test
 
 <img width="1436" height="733" alt="スクリーンショット 2025-07-12 4 16 39" src="https://github.com/user-attachments/assets/7ff1a1ea-4075-4f56-bb40-ae0def28ea33" />
 
+<img width="1435" height="775" alt="スクリーンショット 2025-07-12 14 37 55" src="https://github.com/user-attachments/assets/29e409aa-0111-4650-8933-f83015702a85" />
+
+## スマホアプリ
+XCode(テスト（iOSシミュレータや実機）、デプロイ（App Store用ビルド）時にインストール)
+
 
 ## バックエンド
 - サーバー起動
@@ -97,7 +102,3 @@ docker compose up -d
 ```
 docker compose down
 ```
-
-## スマホアプリ
-
-XCode(テスト（iOSシミュレータや実機）、デプロイ（App Store用ビルド）時にインストール)
