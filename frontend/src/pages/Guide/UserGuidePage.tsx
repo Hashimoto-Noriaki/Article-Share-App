@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const UserGuidePage = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-6">
@@ -24,6 +26,13 @@ export const UserGuidePage = () => {
                         🎉 料金は一切不要です。安心してご利用ください。
                     </p>
                 </div>
+            </div>
+            <div className="mt-5">
+                <button 
+                    className="w-[300px] mt-8 border-2 border-solid border-cyan-100 bg-cyan-300 hover:bg-cyan-400 font-bold px-10 py-5 rounded-full shadow transition hover:"
+                >
+                    <Link to="/">戻る</Link>
+                </button>
             </div>
         </div>
     );
