@@ -1,0 +1,71 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - master
+      - 'develop'
+  pull_request:
+    branches:
+      - master
+      - 'develop'
+
+jobs:
+  lint_and_format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+      # ReactのLint(Biome)を実行
+      - name: Run Biome for React
+        run: |
+          cd frontend
+          npm install
+          npm run lint
+          npm run format
+
+# Reactのテスト　Jest、TesttingLibrary導入次第
+  # test:
+  #   name: Run Tests
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+
+  #     - name: Set up Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: '20'
+
+  #     - name: Install dependencies
+  #       run: npm install
+
+  #     - name: Run Tests
+  #       run: npm test
+
+      # - name: Run Prettier for Next.js
+      #   run: |
+      #     cd frontend
+      #     npm install
+      #     npx prettier --write .
+
+      # # Nest.jsのBiomeを実行
+      # - name: Run ESLint for Nest.js
+      #   run: |
+      #     cd backend
+      #     npm install
+
+
+      # # ReactNativeのBiomeを実行
+      # - name: Run ESLint for Nest.js
+      #   run: |
+      #     cd mobile
+
+      
