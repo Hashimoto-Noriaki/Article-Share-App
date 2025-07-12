@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
-import { AuthButton } from '../../shared/atoms/auth/AuthButton';
-import { Input } from '../../shared/atoms/Input/Input';
+import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
+import { Input } from '../../../shared/components/atoms/Input/Input';
 
 export const LoginPage = () => {
     return (

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ReturnButton } from '../../shared/atoms/ReturnButton/ReturnButton';
+import { ReturnButton } from '../../shared/components/atoms/ReturnButton/ReturnButton';
+
 
 export const UserGuidePage = () => {
     return (
