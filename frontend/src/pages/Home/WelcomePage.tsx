@@ -13,7 +13,9 @@ export const WelcomePage = () => {
                     </div>
                     <nav>
                         <ul className="flex gap-10 text-white font-bold p-5 text-lg">
-                            <li className="hover:text-yellow-400">利用説明</li>
+                            <li className="hover:text-yellow-400">
+                                <Link to='/guide'>利用説明</Link>
+                            </li>
                             <li className="hover:text-yellow-400">
                                 <Link to='/register'>新規ユーザー登録</Link>
                             </li>
