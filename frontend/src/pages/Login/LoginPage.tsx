@@ -21,7 +21,7 @@ export const LoginPage = () => {
                     </div>
                     <div>
                         <p className="font-bold mb-3">パスワード</p>
-                        <input
+                        <Input
                             type="password"
                             placeholder="********"
                         />
