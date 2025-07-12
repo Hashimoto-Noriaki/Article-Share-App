@@ -50,12 +50,6 @@ jobs:
   #     - name: Run Tests
   #       run: npm test
 
-      # - name: Run Prettier for Next.js
-      #   run: |
-      #     cd frontend
-      #     npm install
-      #     npx prettier --write .
-
       # # Nest.jsのBiomeを実行
       # - name: Run ESLint for Nest.js
       #   run: |
@@ -67,5 +61,3 @@ jobs:
       # - name: Run ESLint for Nest.js
       #   run: |
       #     cd mobile
-
-      
