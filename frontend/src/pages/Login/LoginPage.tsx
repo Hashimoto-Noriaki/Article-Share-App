@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
+import { AuthButton } from '../../shared/atoms/auth/AuthButton';
+import { Input } from '../../shared/atoms/Input/Input';
 
 export const LoginPage = () => {
     return (
@@ -12,23 +14,21 @@ export const LoginPage = () => {
                 <form className="flex flex-col gap-6 text-left">
                     <div>
                         <p className="font-bold mb-3">メールアドレス</p>
-                        <input
+                        <Input
                             type="email"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="メールアドレス*"
                         />
                     </div>
                     <div>
                         <p className="font-bold mb-3">パスワード</p>
-                        <input
+                        <Input
                             type="password"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="********"
                         />
                     </div>
-                    <button className="w-full bg-emerald-600 hover:shadow-lg text-white rounded-lg font-bold py-3 mt-5 mrounded-full shadow hover:bg-emerald-500 transition">
+                    <AuthButton>
                         ログイン
-                    </button>
+                    </AuthButton>
                     <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
                         <Link to ='/register'>新規登録はこちら</Link>
                     </p>

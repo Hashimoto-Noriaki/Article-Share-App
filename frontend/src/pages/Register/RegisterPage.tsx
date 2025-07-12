@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
+import { AuthButton } from '../../shared/atoms/auth/AuthButton';
+import { Input } from '../../shared/atoms/Input/Input';
 
 export const RegisterPage = () => {
     return (
@@ -8,35 +10,32 @@ export const RegisterPage = () => {
                 <h1 className="text-2xl flex items-center justify-center mb-5">
                     <FaLaptopCode /> テックブログ共有アプリ
                 </h1>
-                <h2 className="text-xl font-bold mb-6">新規登録する</h2>
+                <h2 className="text-xl font-bold mb-6">新規登録</h2>
                 <form className="flex flex-col gap-6 text-left">
                     <div>
                         <p className="font-bold mb-3">名前</p>
-                        <input
+                        <Input
                             type="email"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="名前を入力してください*"
                         />
                     </div>
                     <div>
                         <p className="font-bold mb-3">メールアドレス</p>
-                        <input
+                        <Input
                             type="email"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="メールアドレスを入力してください"
                         />
                     </div>
                     <div>
                         <p className="font-bold mb-3">パスワード</p>
-                        <input
+                        <Input
                             type="password"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="8文字以上の半角英数字"
                         />
                     </div>
-                    <button className="w-full bg-emerald-600 hover:shadow-lg text-white rounded-lg font-bold py-3 mt-5 mrounded-full shadow hover:bg-emerald-500 transition">
-                        ログイン
-                    </button>
+                    <AuthButton>
+                        登録する
+                    </AuthButton>
                     <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
                         <Link to = '/login'>ログインはこちら</Link>
                     </p>
