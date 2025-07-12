@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ReturnButton } from '../../shared/atoms/ReturnButton/ReturnButton';
 
 export const UserGuidePage = () => {
     return (
@@ -28,11 +29,9 @@ export const UserGuidePage = () => {
                 </div>
             </div>
             <div className="mt-5">
-                <button 
-                    className="w-[300px] mt-8 border-2 border-solid border-cyan-100 bg-cyan-300 hover:bg-cyan-400 font-bold px-10 py-5 rounded-full shadow transition hover:"
-                >
+                <ReturnButton>
                     <Link to="/">戻る</Link>
-                </button>
+                </ReturnButton>
             </div>
         </div>
     );
