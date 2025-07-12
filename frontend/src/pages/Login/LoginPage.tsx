@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AuthButton } from '../../shared/atoms/auth/AuthButton';
+import { Input } from '../../shared/atoms/Input/Input';
 
 export const LoginPage = () => {
     return (
@@ -13,9 +14,8 @@ export const LoginPage = () => {
                 <form className="flex flex-col gap-6 text-left">
                     <div>
                         <p className="font-bold mb-3">メールアドレス</p>
-                        <input
+                        <Input
                             type="email"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="メールアドレス*"
                         />
                     </div>
@@ -23,7 +23,6 @@ export const LoginPage = () => {
                         <p className="font-bold mb-3">パスワード</p>
                         <input
                             type="password"
-                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-800"
                             placeholder="********"
                         />
                     </div>
