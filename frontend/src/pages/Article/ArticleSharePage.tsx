@@ -15,13 +15,13 @@ export const ArticleSharePage = () => {
                         <nav>
                             <ul className="flex gap-10 text-white font-bold p-5 text-lg">
                                 <li className="hover:text-yellow-400">
-                                    <Link to='/guide'>利用説明</Link>
+                                    <Link to='/#'>利用ガイド</Link>
                                 </li>
                                 <li className="hover:text-yellow-400">
-                                    <Link to='/register'>新規ユーザー登録</Link>
+                                    <Link to='#'>記事を登録する</Link>
                                 </li>
                                 <li className="hover:text-yellow-400">
-                                    <Link to='/login'>ログイン</Link>
+                                    <Link to='#'>ログアウト</Link>
                                 </li>
                             </ul>
                         </nav>
