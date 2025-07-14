@@ -4,6 +4,7 @@ import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
 import { Input } from '../../../shared/components/atoms/Input/Input';
 
 export const LoginPage = () => {
+
     return (
         <div className="flex items-center justify-center max-h-screen bg-white p-10">
             <div className="bg-gradient-to-r from-cyan-400 to-cyan-500 p-10 rounded-lg shadow-lg w-full max-w-md text-center">
@@ -26,9 +27,11 @@ export const LoginPage = () => {
                             placeholder="********"
                         />
                     </div>
-                    <AuthButton>
+                    <form autoComplete="off">
+                        <AuthButton onClick={() => null}>
                         ログイン
-                    </AuthButton>
+                        </AuthButton>
+                    </form>
                     <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
                         <Link to ='/register'>新規登録はこちら</Link>
                     </p>
