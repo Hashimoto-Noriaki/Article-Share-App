@@ -8,17 +8,21 @@ import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
 import { Input } from '../../../shared/components/atoms/Input/Input';
 
 export const LoginPage = () => {
-    const { register, handleSubmit,formState: { errors } } = useForm<LoginFormValues>({
+    const { register, handleSubmit, setError, formState: { errors } } = useForm<LoginFormValues>({
         resolver: zodResolver(loginSchema),
     });
 
-    const onSubmit = async (data: LoginFormValues)=> {
+    const onSubmit = async (data: LoginFormValues) => {
+        event.preventDefault()
         try {
             await login(data);
         } catch {
-            console.error("ログインに失敗しました。");
-        }
+            setError("email", {
+                type: "manual",
+                message: "メールアドレスかパスワードが間違っています",
+        });
     }
+};
 
     return (
         <div className="flex items-center justify-center max-h-screen bg-white p-10">
@@ -35,7 +39,7 @@ export const LoginPage = () => {
                         <p className="font-bold mb-3">メールアドレス</p>
                         <Input
                             type="email"
-                            {...register("email")}
+                            // {...register("email")}
                             placeholder="email"
                         />
                     </div>
