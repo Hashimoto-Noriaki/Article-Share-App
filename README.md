@@ -84,6 +84,10 @@ XCode(テスト（iOSシミュレータや実機）、デプロイ（App Store�
 ```
 npm run start:dev
 ```
+- Prisma起動
+```
+npx prisma start
+```
 
 ### Docker
 - ***ビルド***
