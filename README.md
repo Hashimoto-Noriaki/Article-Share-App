@@ -7,7 +7,7 @@
 - CSS Modules
 - Biome
 - StoryBook
-- TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発)
+- TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発。スキーマファーストで作っていく。)
 - Jest
 - Testing Library
 - Docker(マルチステージビルド)
