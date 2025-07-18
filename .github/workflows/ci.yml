@@ -50,12 +50,18 @@ jobs:
   #     - name: Run Tests
   #       run: npm test
 
-      # # Nest.jsのBiomeを実行
-      # - name: Run ESLint for Nest.js
-      #   run: |
-      #     cd backend
-      #     npm install
+      #Nest.jsのESLintとPrettierを実装
+      - name: Run ESLint for Nest.js
+        run: |
+          cd backend
+          npm install
+          npx eslint . --fix
 
+      - name: Run Prettier for Nest.js
+        run: |
+          cd backend
+          npm install
+          npx prettier --write .
 
       # # ReactNativeのBiomeを実行
       # - name: Run ESLint for Nest.js
