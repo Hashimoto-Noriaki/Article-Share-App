@@ -5,7 +5,6 @@
 - ReactNative
 - Tailwind
 - CSS Modules
-- Biome
 - StoryBook
 - TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発。スキーマファーストで作っていく。)
 - Jest
@@ -13,6 +12,8 @@
 - Docker(マルチステージビルド)
 - GitHubActions
 - Prisma
+- Biome
+- ESLint Prettier
 - GCP
 
 
