@@ -89,6 +89,19 @@ npm run start:dev
 npx prisma start
 ```
 
+### ESLint Prettier
+
+- ESLint
+```
+npx eslint . --fix
+```
+
+- Prettier
+
+```
+npx prettier --write .
+```
+
 ### Docker
 - ***ビルド***
 ```
