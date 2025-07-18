@@ -104,6 +104,11 @@ npx prettier --write .
 ```
 
 ### Docker
+- ***Dockerのみで起動***
+```
+docker-compose up --build
+```
+
 - ***ビルド***
 ```
 cd frontend
