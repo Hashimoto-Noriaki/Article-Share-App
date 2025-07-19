@@ -29,3 +29,9 @@ export type LoginReturnType = {
 // bio	ユーザー名の下にちょっとした自己紹介
 // createdAt	マイページなどで「参加日」として表示
 // updatedAt	プロフィール最終更新日を表示する場合
+
+//ログイン時(ContextAPIを使用してMVP開発用)
+export type LoginUserType = {
+    id: number;
+    name: string;
+};
