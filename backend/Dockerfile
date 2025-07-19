@@ -1,16 +1,22 @@
-# Build stage
-FROM node:18-slim as build
+FROM node:18
 
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
+
+# 依存関係を先にコピー（キャッシュ効かせる）
+COPY package*.json ./
+RUN npm install
+
+# Prismaスキーマを確実にコピー
+COPY prisma ./prisma
+
+# その他のコード（srcなど）をコピー
 COPY . .
+
+# Prisma Clientの生成
+RUN npx prisma generate
+
+# NestJSアプリのビルド
 RUN npm run build
 
-# Production stage
-FROM nginx:alpine
-
-COPY --from=build /app/dist /usr/share/nginx/html
-
-EXPOSE 3000
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 4000
+CMD ["node", "dist/main"]

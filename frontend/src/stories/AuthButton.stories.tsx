@@ -1,3 +1,4 @@
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { AuthButton } from '../shared/components/atoms/auth/AuthButton';
 
 const meta: Meta<typeof AuthButton> = {

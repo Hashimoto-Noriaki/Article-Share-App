@@ -1,16 +1,11 @@
-# Build stage
-FROM node:18-slim as build
+# Stage 1
+FROM node:18 as build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
-WORKDIR /app/dist
-COPY package.json package-lock.json ./
-RUN npm ci
-
-# COPY . .
-# RUN npm run build
-
-# Production stage
+# Stage 2
 FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
-
-EXPOSE 3000
-CMD ["nginx", "-g", "daemon off;"]

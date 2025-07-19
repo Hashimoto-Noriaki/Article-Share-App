@@ -28,7 +28,7 @@ export const LoginPage = () => {
                         />
                     </div>
                     <form autoComplete="off">
-                        <AuthButton onClick={() => null}>
+                        <AuthButton>
                         ログイン
                         </AuthButton>
                     </form>
