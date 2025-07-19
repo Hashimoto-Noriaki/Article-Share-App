@@ -13,9 +13,9 @@ export const LoginPage = () => {
     });
 
     const onSubmit = async (data: LoginFormValues) => {
-        event.preventDefault()
         try {
             await login(data);
+            //成功時の処理を後ほど追加
         } catch {
             setError("email", {
                 type: "manual",
@@ -39,7 +39,7 @@ export const LoginPage = () => {
                         <p className="font-bold mb-3">メールアドレス</p>
                         <Input
                             type="email"
-                            // {...register("email")}
+                            {...register("email")}
                             placeholder="email"
                         />
                     </div>
@@ -51,7 +51,7 @@ export const LoginPage = () => {
                             placeholder="password"
                         />
                     </div>
-                    <AuthButton onClick={() => null}>
+                    <AuthButton type="submit">
                     ログイン
                     </AuthButton>
                     <p className="mt-3 text-center text-xl underline hover:text-cyan-800">

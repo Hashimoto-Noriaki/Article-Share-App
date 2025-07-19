@@ -9,6 +9,6 @@ export const login = async (info: LoginInfoType): Promise<LoginReturnType> => {
                 email:"test@example.com",
             };
         } else {
-            throw new Error("メールアドレスかパスワードが間違っています");
+            throw new Error();
     }
 };
