@@ -1,8 +1,10 @@
+import { useLoginUser } from '../../shared/hooks/useLoginUser'
 import { FaLaptopCode } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Footer } from '../../shared/components/atoms/Footer/Footer';
 
 export const ArticleSharePage = () => {
+    const { loginUser } = useLoginUser();
     return (
         <>
             <div className="flex flex-col min-h-screen">
@@ -33,6 +35,10 @@ export const ArticleSharePage = () => {
                             <FaLaptopCode className="text-3xl"/>テックブログ共有アプリ
                         </h1>
                         <p className="text-3xl">ここに有益な記事を共有していこう</p>
+                    </div>
+                    <div>
+                        <p>{loginUser.id}</p>
+                        <p>{loginUser.name}</p>
                     </div>
                 </main>
                 <Footer/>

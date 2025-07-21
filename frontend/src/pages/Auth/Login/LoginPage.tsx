@@ -1,14 +1,17 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema, LoginFormValues } from "../schemas/loginSchema";
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { login } from '../../../api/login';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
 import { Input } from '../../../shared/components/atoms/Input/Input';
 import { useState } from 'react';
+import { useLoginUser } from '../../../shared/hooks/useLoginUser'
 
 export const LoginPage = () => {
+    const navigate = useNavigate()
+    const { setLoginUser } = useLoginUser();
     const [apiError, setApiError] = useState("");
     const {
         register,
@@ -19,16 +22,18 @@ export const LoginPage = () => {
         resolver: zodResolver(loginSchema),
     });
 
+    // 修正後 LoginPage.tsx の onSubmit 部分のみ変更
     const onSubmit = async (data: LoginFormValues) => {
         try {
             setApiError(""); // 前のエラーをクリア
-            await login(data);
-            // 成功時の処理を後ほど追加
+            const user = await login(data);
+            setLoginUser(user); // Contextにログインユーザーをセット
+            navigate("/article_share"); // トップページなどに遷移
         } catch {
             setApiError("メールアドレスかパスワードを間違っています");
             setError("email", {
                 type: "manual",
-                message: "", // バリデーションと区別するため空に
+                message: "",
             });
         }
     };
