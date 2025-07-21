@@ -9,6 +9,7 @@
 - ReactNative
 - Tailwind
 - CSS Modules
+- EXPO
 - React-Hook-Form
 - Zod
 - StoryBook
