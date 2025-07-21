@@ -80,7 +80,19 @@ npm test
 
 ## スマホアプリ
 XCode(テスト（iOSシミュレータや実機）、デプロイ（App Store用ビルド）時にインストール)
+- アプリ起動
+```
+npm run web
 
+npm run ios
+
+npm run android
+```
+- EXPO
+```
+npx expo start
+```
+QRコードをEXPO GOで読み取り
 
 ## バックエンド
 - サーバー起動
