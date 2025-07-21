@@ -1,22 +1,21 @@
-import { createContext, useState, ReactNode } from "react";
-import { LoginUserType } from "../../../types/login";
-
-export type LoginUserContextType = {
-    loginUser: LoginUserType
-    setLoginUser: (user: LoginUserType) => void;
-};
+import { createContext, useState, ReactNode } from 'react';
 
 export const LoginUserContext = createContext<LoginUserContextType | undefined>(undefined);
 
 export const LoginUserProvider = ({ children }: { children: ReactNode }) => {
-    const [loginUser, setLoginUser] = useState<LoginUserType>({
-        id: 0,
-        name: "",
-    });
+  const [loginUser, setLoginUserState] = useState<LoginUser>(null);
 
-    return (
-        <LoginUserContext.Provider value={{ loginUser, setLoginUser }}>
-            {children}
-        </LoginUserContext.Provider>
-    );
+  const setLoginUser = (user: LoginUser) => {
+    setLoginUserState(user);
+  };
+
+  const logout = () => {
+    setLoginUserState(null);
+  };
+
+  return (
+    <LoginUserContext.Provider value={{ loginUser, setLoginUser, logout }}>
+      {children}
+    </LoginUserContext.Provider>
+  );
 };
