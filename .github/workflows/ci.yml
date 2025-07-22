@@ -45,10 +45,14 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd frontend
+          npm install
 
       - name: Run Tests
-        run: npm run test
+        run: |
+          cd frontend
+          npm run test
 
       #Nest.jsのESLintとPrettierを実装
       - name: Run ESLint for Nest.js
