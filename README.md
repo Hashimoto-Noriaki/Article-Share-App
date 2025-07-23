@@ -92,7 +92,7 @@ npm run android
 ```
 npx expo start
 ```
-QRコードをEXPO GOで読み取り
+***QRコードをEXPO GOで読み取り。IOSはカメラでQRコードを読み取って、実機で動作確認***
 
 ## バックエンド
 - サーバー起動
