@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
 // import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
-// import { Input } from '../../../shared/components/atoms/Input/Input';
+import { Input } from '../../shared/components/atoms/Input/Input';
 
 export const RegisterArticlePage = () => {
     return (
@@ -10,34 +10,26 @@ export const RegisterArticlePage = () => {
                 <h1 className="text-2xl flex items-center justify-center mb-5">
                     <FaLaptopCode /> テックブログ共有アプリ
                 </h1>
-                <h2 className="text-xl font-bold mb-6">新規登録</h2>
+                <h2 className="text-xl font-bold mb-6">お気に入りの記事を登録する</h2>
+                <p>登録したい記事のURLを貼ってください。</p>
                 <form className="flex flex-col gap-6 text-left">
                     <div>
-                        <p className="font-bold mb-3">名前</p>
-                        {/* <Input
-                            type="email"
-                            placeholder="名前を入力してください*"
-                        /> */}
+                        <p className="font-bold mb-3">記事のURL</p>
+                        <Input
+                            placeholder="URLを貼ってください。"
+                        />
                     </div>
                     <div>
-                        <p className="font-bold mb-3">メールアドレス</p>
-                        {/* <Input
-                            type="email"
-                            placeholder="メールアドレスを入力してください"
-                        /> */}
+                        <p className="font-bold mb-3">記事の名前(*任意)</p>
+                        <Input
+                            placeholder="ご自由に書いてください"
+                        />
                     </div>
-                    <div>
-                        <p className="font-bold mb-3">パスワード</p>
-                        {/* <Input
-                            type="password"
-                            placeholder="8文字以上の半角英数字"
-                        /> */}
-                    </div>
-                    {/* <AuthButton>
+                    <button className="w-full bg-yellow-400 hover:shadow-lg text-white rounded-lg font-bold py-3 mt-5  shadow hover:bg-yellow-300 transition">
                         登録する
-                    </AuthButton> */}
-                    <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
-                        <Link to = '/article_share'>戻る</Link>
+                    </button>
+                        <p className="mt-3 text-center text-xl underline hover:text-cyan-800">
+                            <Link to = '/article_share'>戻る</Link>
                     </p>
                 </form>
             </div>
