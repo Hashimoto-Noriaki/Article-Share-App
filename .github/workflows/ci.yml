@@ -31,24 +31,28 @@ jobs:
           npm run format
 
 # Reactのテスト　Jest、TesttingLibrary導入次第
-  # test:
-  #   name: Run Tests
-  #   runs-on: ubuntu-latest
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Set up Node.js
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-  #     - name: Install dependencies
-  #       run: npm install
+      - name: Install dependencies
+        run: |
+          cd frontend
+          npm install
 
-  #     - name: Run Tests
-  #       run: npm test
+      - name: Run Tests
+        run: |
+          cd frontend
+          npm run test
 
       #Nest.jsのESLintとPrettierを実装
       - name: Run ESLint for Nest.js
