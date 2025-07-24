@@ -95,26 +95,12 @@ npx expo start
 ***QRコードをEXPO GOで読み取り。IOSはカメラでQRコードを読み取って、実機で動作確認***
 
 ## バックエンド
+- 公式ドキュメント
+https://docs.nestjs.com/
+
 - サーバー起動
 ```
 npm run start:dev
-```
-- Prisma起動
-```
-npx prisma start
-```
-
-### ESLint Prettier
-
-- ESLint
-```
-npx eslint . --fix
-```
-
-- Prettier
-
-```
-npx prettier --write .
 ```
 
 ### Docker

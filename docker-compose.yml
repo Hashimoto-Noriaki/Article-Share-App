@@ -6,6 +6,9 @@ services:
       - "4000:4000"
     networks:
       - app-network
+    depends_on:
+      - db  # db起動後に起動する
+
   frontend:
     build: ./frontend
     ports:
@@ -15,6 +18,23 @@ services:
     depends_on:
       - backend
 
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
 networks:
   app-network:
     driver: bridge
+
+volumes:
+  postgres_data:

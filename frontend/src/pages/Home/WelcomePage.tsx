@@ -4,7 +4,7 @@ import { NotLoginLayout } from '../../features/components/templates/NotLoginLayo
 export const WelcomePage = () => {
     return (
         <NotLoginLayout>
-            <div className="bg-gradient-to-r from-cyan-300 to-cyan-600 text-white px-16 py-24 rounded-md w-full max-w-5xl text-center shadow-lg">
+            <div className="bg-gradient-to-r from-rose-300 to-cyan-600 text-white px-16 py-24 rounded-md w-full max-w-5xl text-center shadow-lg rounded-2xl">
                 <h1 className="text-5xl font-bold mb-10 flex items-center justify-center">
                     <FaLaptopCode className="text-5xl"/>テックブログ共有アプリ
                 </h1>
