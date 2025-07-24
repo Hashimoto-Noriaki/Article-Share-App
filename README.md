@@ -1,6 +1,6 @@
 ### 記事共有アプリ
+<img width="1404" height="771" alt="スクリーンショット 2025-07-25 1 03 52" src="https://github.com/user-attachments/assets/9e6ee8c7-ebac-4599-961f-39f7100fcfdc" />
 
-<img width="1436" height="733" alt="スクリーンショット 2025-07-12 4 16 39" src="https://github.com/user-attachments/assets/7ff1a1ea-4075-4f56-bb40-ae0def28ea33" />
 
 ## 技術構成
 - TypeScript
