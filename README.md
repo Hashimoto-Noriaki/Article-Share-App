@@ -10,6 +10,7 @@
 - Tailwind
 - CSS Modules
 - EXPO
+- ReactNativePaper(UIライブラリ。Inputやbuttonなどパーツ単位で使用)
 - React-Hook-Form
 - Zod
 - StoryBook
