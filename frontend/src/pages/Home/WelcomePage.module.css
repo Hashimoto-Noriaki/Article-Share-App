@@ -1,0 +1,20 @@
+.banner {
+    background: linear-gradient(to right, #fca5a5, #22d3ee); /* from-rose-300 to-cyan-600 相当 */
+    color: white; //text-white
+    padding: 6rem 4rem; //px-16 py-24
+    border-radius: 1rem; //rounded-md
+    max-width: 80rem; //max-w-5xl 
+    width: 100%; //w-full
+    text-align: center; //text-center
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);//shadow-lg
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;//text-5xl
+    font-weight: bold;//font-bold
+    margin-bottom: 2.5rem;//mb-10
+    display: flex;//flex
+    align-items: center;//items-center
+    justify-content: center;//     justify-center
+}
