@@ -1,3 +1,7 @@
+### 記事共有アプリ
+
+<img width="1436" height="733" alt="スクリーンショット 2025-07-12 4 16 39" src="https://github.com/user-attachments/assets/7ff1a1ea-4075-4f56-bb40-ae0def28ea33" />
+
 ## 技術構成
 - TypeScript
 - React
@@ -5,14 +9,18 @@
 - ReactNative
 - Tailwind
 - CSS Modules
-- Biome
+- EXPO
+- React-Hook-Form
+- Zod
 - StoryBook
-- TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発)
+- TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発。スキーマファーストで作っていく。)
 - Jest
 - Testing Library
 - Docker(マルチステージビルド)
 - GitHubActions
 - Prisma
+- Biome
+- ESLint Prettier
 - GCP
 
 
@@ -69,15 +77,22 @@ Jest、TestingLibrary
 npm test
 ```
 
-### トップ画像
-
-<img width="1436" height="733" alt="スクリーンショット 2025-07-12 4 16 39" src="https://github.com/user-attachments/assets/7ff1a1ea-4075-4f56-bb40-ae0def28ea33" />
-
-<img width="1435" height="775" alt="スクリーンショット 2025-07-12 14 37 55" src="https://github.com/user-attachments/assets/29e409aa-0111-4650-8933-f83015702a85" />
 
 ## スマホアプリ
 XCode(テスト（iOSシミュレータや実機）、デプロイ（App Store用ビルド）時にインストール)
+- アプリ起動
+```
+npm run web
 
+npm run ios
+
+npm run android
+```
+- EXPO
+```
+npx expo start
+```
+***QRコードをEXPO GOで読み取り。IOSはカメラでQRコードを読み取って、実機で動作確認***
 
 ## バックエンド
 - 公式ドキュメント
@@ -87,12 +102,13 @@ https://docs.nestjs.com/
 ```
 npm run start:dev
 ```
-- schema.prismaに追加
-```
-npx prisma generate
-```
 
 ### Docker
+- ***Dockerのみで起動***
+```
+docker-compose up --build
+```
+
 - ***ビルド***
 ```
 cd frontend
