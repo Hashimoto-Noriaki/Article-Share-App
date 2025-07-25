@@ -13,6 +13,7 @@
 - ReactNativePaper(UIライブラリ。Inputやbuttonなどパーツ単位で使用)
 - React-Hook-Form
 - Zod
+- ContextAPI
 - StoryBook
 - TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発。スキーマファーストで作っていく。)
 - Jest
