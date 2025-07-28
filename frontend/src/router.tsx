@@ -36,12 +36,3 @@ export const router = createBrowserRouter([
         ],
     }
 ])
-
-// export const router = createBrowserRouter([
-//     {path:'/',element: <WelcomePage/>},
-//     {path:'/login',element: <LoginPage/>},
-//     {path:'/register',element: <RegisterPage/>},
-//     {path:'/guide',element: <UserGuidePage/>},
-//     {path:'/article_share',element: <ArticleSharePage/>},
-//     {path:'/register_article',element: <RegisterArticlePage/>}
-// ])
