@@ -18,6 +18,9 @@ export const LoginLayout = () => {
                 <Link to='/register_article'>記事を登録する</Link>
               </li>
               <li className="hover:text-yellow-400">
+                <p>マイページ</p>
+              </li>
+              <li className="hover:text-yellow-400">
                 <Link to='/logout'>ログアウト</Link>
               </li>
             </ul>
