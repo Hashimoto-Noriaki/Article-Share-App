@@ -1,10 +1,6 @@
 import { Link,Outlet } from 'react-router-dom';
 import { Footer } from '../../../shared/components/atoms/Footer/Footer';
 
-// type PropsType = {
-//     children: React.ReactNode;
-// }
-
 export const NotLoginLayout = () => {
     return (
         <div className="flex flex-col min-h-screen">
