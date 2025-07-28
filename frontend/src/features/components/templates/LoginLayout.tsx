@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link,Outlet} from 'react-router-dom';
 
 export const LoginLayout = () => {
     return (
+        <>
         <header className="bg-gradient-to-r from-cyan-300 to-cyan-600 p-5">
         <div className="flex justify-between">
           <div> 
@@ -23,5 +24,7 @@ export const LoginLayout = () => {
           </nav>
         </div>
       </header>
+        <Outlet/>
+    </>
     )
 }
