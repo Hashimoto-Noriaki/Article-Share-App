@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react';
 import { useLoginUser } from '../../shared/hooks/useLoginUser';
-import { LoginUserProvider } from '../../shared/contexts/LoginUser/LoginUserContext';
+import { LoginUserProvider } from '../../shared/contexts/LoginUser/LoginUserProvider';
 
 describe('useLoginUser', () => {
     //テスト1: 正常ケース
