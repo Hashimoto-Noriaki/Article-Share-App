@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
-import { Input } from '../../../shared/components/atoms/Input/Input';
+import { InputForm } from '../../../shared/components/atoms/InputForm/InputForm';
 
 export const RegisterPage = () => {
     return (
@@ -14,21 +14,21 @@ export const RegisterPage = () => {
                 <form className="flex flex-col gap-6 text-left">
                     <div>
                         <p className="font-bold mb-3">名前</p>
-                        <Input
+                        <InputForm
                             type="email"
                             placeholder="名前を入力してください*"
                         />
                     </div>
                     <div>
                         <p className="font-bold mb-3">メールアドレス</p>
-                        <Input
+                        <InputForm
                             type="email"
                             placeholder="メールアドレスを入力してください"
                         />
                     </div>
                     <div>
                         <p className="font-bold mb-3">パスワード</p>
-                        <Input
+                        <InputForm
                             type="password"
                             placeholder="8文字以上の半角英数字"
                         />

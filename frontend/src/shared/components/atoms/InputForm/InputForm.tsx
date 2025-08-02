@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import { ComponentPropsWithoutRef } from 'react';
 
-export const Input = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>(
+export const InputForm = forwardRef<HTMLInputElement, ComponentPropsWithoutRef<'input'>>(
   (props, ref) => {
     return (
       <input

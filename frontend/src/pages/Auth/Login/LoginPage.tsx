@@ -5,7 +5,7 @@ import { Link,useNavigate } from 'react-router-dom';
 import { login } from '../../../api/login';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
-import { Input } from '../../../shared/components/atoms/Input/Input';
+import { InputForm } from '../../../shared/components/atoms/InputForm/InputForm';
 import { useState } from 'react';
 import { useLoginUser } from '../../../shared/hooks/useLoginUser'
 
@@ -54,7 +54,7 @@ export const LoginPage = () => {
                 <form className="flex flex-col gap-6 text-left" onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <p className="font-bold mb-3">メールアドレス</p>
-                        <Input
+                        <InputForm
                             type="email"
                             {...register("email")}
                             placeholder="email"
@@ -65,7 +65,7 @@ export const LoginPage = () => {
                     </div>
                     <div>
                         <p className="font-bold mb-3">パスワード</p>
-                        <Input
+                        <InputForm
                             type="password"
                             {...register("password")}
                             placeholder="password"
