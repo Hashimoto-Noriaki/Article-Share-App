@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLaptopCode } from 'react-icons/fa';
 // import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
-import { Input } from '../../shared/components/atoms/Input/Input';
+import { InputForm } from '../../shared/components/atoms/InputForm/InputForm';
 
 export const RegisterArticlePage = () => {
     return (
@@ -15,13 +15,13 @@ export const RegisterArticlePage = () => {
                 <form className="flex flex-col gap-6 text-left">
                     <div>
                         <p className="font-bold mb-3">記事のURL</p>
-                        <Input
+                        <InputForm
                             placeholder="URLを貼ってください。"
                         />
                     </div>
                     <div>
                         <p className="font-bold mb-3">記事の名前(*任意)</p>
-                        <Input
+                        <InputForm
                             placeholder="ご自由に書いてください"
                         />
                     </div>
