@@ -1,6 +1,5 @@
-import { createContext, useState, ReactNode } from 'react';
-
-export const LoginUserContext = createContext<LoginUserContextType | undefined>(undefined);
+import { useState, ReactNode } from 'react';
+import { LoginUserContext } from './LoginUserContext';
 
 export const LoginUserProvider = ({ children }: { children: ReactNode }) => {
   const [loginUser, setLoginUserState] = useState<LoginUser>(null);

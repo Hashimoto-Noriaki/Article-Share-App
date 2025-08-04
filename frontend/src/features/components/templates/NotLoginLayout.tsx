@@ -1,11 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link,Outlet } from 'react-router-dom';
 import { Footer } from '../../../shared/components/atoms/Footer/Footer';
 
-type PropsType = {
-    children: React.ReactNode;
-}
-
-export const NotLoginLayout = ({children}: PropsType) => {
+export const NotLoginLayout = () => {
     return (
         <div className="flex flex-col min-h-screen">
             <header className="bg-gradient-to-r from-cyan-300 to-cyan-600 p-5">
@@ -30,7 +26,7 @@ export const NotLoginLayout = ({children}: PropsType) => {
                 </div>
             </header>
             <main className="flex-grow flex flex-col items-center justify-center">
-                {children}
+                <Outlet/>
             </main>
             <Footer />
         </div>
