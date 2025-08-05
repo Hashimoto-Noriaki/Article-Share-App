@@ -1,18 +1,22 @@
 .container {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    max-height:100vh; /*max-h-screen */
-    background-color: white;
-    padding: 2.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh; /*max-h-screen */
+  background-color: white;
+  padding: 2.5rem;
 }
 
 .loginBox {
-    background: linear-gradient(to right, #22d3ee, #06b6d4); /* cyan-400 → cyan-500 */
-    padding:2.5rem; /* p-10 */
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);/* shadow-lg */
-    max-width: 28rem;/* max-w-md */
-    width: 100%;/* w-full */
-    text-align: center;
+  background: linear-gradient(
+    to right,
+    #22d3ee,
+    #06b6d4
+  ); /* cyan-400 → cyan-500 */
+  padding: 2.5rem; /* p-10 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  max-width: 28rem; /* max-w-md */
+  width: 100%; /* w-full */
+  text-align: center;
 }
