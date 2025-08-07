@@ -5,6 +5,7 @@ const config: Config = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  testPathIgnorePatterns: ['/node_modules/', '/test/e2e/'],
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.app.json',
