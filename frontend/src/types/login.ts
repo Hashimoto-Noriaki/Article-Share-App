@@ -1,9 +1,9 @@
 export type LoginInfoType = {
-    id:number;
-    name: string;
-    email: string;
-    password: string;
-}
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+};
 
 //今後拡張にあたって、追加される可能性があるもの
 //createdAt	string (ISO日付)	登録日時 (「いつ登録したか」を表示する)
@@ -14,12 +14,11 @@ export type LoginInfoType = {
 // articlesCount	number	投稿した記事数（表示用にキャッシュ）
 // likesCount	number	もらったいいね数（プロフィールに表示）
 
-
 export type LoginReturnType = {
-    id:number;
-    name: string;
-    email: string;
-}
+  id: number;
+  name: string;
+  email: string;
+};
 
 //今後拡張にあたって、追加される可能性があるもの
 // avatarUrl	ログイン後ヘッダーにアイコンを表示したい
@@ -32,6 +31,6 @@ export type LoginReturnType = {
 
 //ログイン時(ContextAPIを使用してMVP開発用)
 export type LoginUserType = {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 };

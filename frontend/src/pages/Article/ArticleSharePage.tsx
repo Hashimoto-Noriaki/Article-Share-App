@@ -23,7 +23,8 @@ export const ArticleSharePage = () => {
       <main className="flex-grow flex flex-col items-center mt-5">
         <div className="bg-gradient-to-r from-cyan-300 to-cyan-600 text-white px-5 py-8 rounded-md w-full max-w-5xl text-center shadow-lg">
           <h1 className="text-5xl font-bold mb-10 flex items-center justify-center">
-            <FaLaptopCode className="text-3xl" />テックブログ共有アプリ
+            <FaLaptopCode className="text-3xl" />
+            テックブログ共有アプリ
           </h1>
           <p className="text-3xl">ここに有益な記事を共有していこう</p>
         </div>
