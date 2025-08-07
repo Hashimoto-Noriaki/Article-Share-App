@@ -18,10 +18,10 @@
 - TypeSpec or Swagger(オープンAPIを用いたスキーマ駆動開発。スキーマファーストで作っていく。)
 - Jest
 - Testing Library
+- PlayWright
 - Docker(マルチステージビルド)
 - GitHubActions
 - Prisma
-- Biome
 - ESLint Prettier
 - GCP
 
