@@ -57,10 +57,7 @@ docker compose up -d
 docker compose down
 ```
 
-### 静的解析ツールBiome
-ESLintとPrettierより高速
-開発スピード重視
-
+### 静的解析ツール(ESLintとPrettier)
 ```
 npm run lint
 
