@@ -8,6 +8,7 @@ import { AuthButton } from '../../../shared/components/atoms/auth/AuthButton';
 import { InputForm } from '../../../shared/components/atoms/InputForm/InputForm';
 import { useState } from 'react';
 import { useLoginUser } from '../../../shared/hooks/useLoginUser';
+import styles from './LoginPage.module.css';
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -39,9 +40,9 @@ export const LoginPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center max-h-screen bg-white p-10">
-      <div className="bg-gradient-to-r from-cyan-400 to-cyan-500 p-10 rounded-lg shadow-lg w-full max-w-md text-center">
-        <h1 className="text-2xl flex items-center justify-center mb-5">
+    <div className={styles.container}>
+      <div className={styles.loginBox}>
+        <h1 className={styles.title}>
           <FaLaptopCode /> テックブログ共有アプリ
         </h1>
 
