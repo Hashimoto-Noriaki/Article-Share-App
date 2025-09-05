@@ -70,6 +70,9 @@ npm run storybook
 ```
 http://localhost:6006/ 
 
+<img width="1438" height="763" alt="スクリーンショット 2025-09-06 1 42 55" src="https://github.com/user-attachments/assets/13d908c2-a38b-49d9-8c32-1b8635b272ea" />
+
+
 ### テスト
 Jest、TestingLibrary
 ```
